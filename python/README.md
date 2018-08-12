@@ -1,5 +1,6 @@
 <h1>Python</h1>
-<h2> day1 - day4 </h2>
+<h2> study </h2>
+day1 ~ day5
 <h2> 용어집 </h2>
 용업집 <br/>
 용어집 - class<br/>

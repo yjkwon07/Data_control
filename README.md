@@ -2,6 +2,7 @@
 
 <h2>python</h2>
 챕터[ch(number)]로 구성되어 있으며, 용어집으로 summary 정의<br/>
+계속해서 study자료는 보충 폴더에 저장<br/>
 Q(파일)<- 공부하면서 궁금했던 내용들<br/> 
 <h2>DataBase</h2>
 - sqllite3 <br/>

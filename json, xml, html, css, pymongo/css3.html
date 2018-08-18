@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div {border: 1px solid #aaaaaa; width: 700px; height: 200px; opacity: 0.5; background-color: #aaaaaa; }
+		#div2 { width: 200px; height: 500px; float: left; background-color: red; }
+		#div3 {width: 200px; height: 500px; float: right; background-color: blue;}
+		#div4 { clear: both; }   
+		#div1 + div {clear: both; content: " "; display: table;} /* div1 다음, 랜더링 끝나고 다음  -> #div1 + div clearfix */
+	</style>
+
+</head>
+<body>
+	<!-- table 작업시 왼쪽 오른쪽을 머신이 구별을 못한다. -->
+	<div id="div1">Header</div>
+	<div>   <!-- 누가 자식노드인지를 몰라 모두 플로팅해서 -->
+		<div id="div2">Side</div>
+		<div id="div3">Content</div>	
+	</div>
+	
+	<div id="div4">Footer</div>
+</body>
+</html>

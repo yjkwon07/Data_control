@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		div {
+			/*padding: 10px;*/
+			background-color: rgb(255,0,0,.5);
+		}
+
+		#id { /*한정되어 div태그 적용 무시*/
+			color: rgb(0,0,255); /* 글자색*/
+		} 		
+		
+		#id2{ /* 특정클래스 배경색을 바꿔줄려함*/
+			background-color: yellow;
+		}
+
+		div + p.class { /*div 현재 바로 이웃*/ 
+			/*적용이 안되었다면 한정자를 더 세밀하게 한다.*/
+			background-color: hsl(90,50%,50%);
+		}
+
+		p.class{
+			
+			font-family: "맑은 고딕", "Malgun Gothic", "바탕체", sans-serif;
+										/*고정폭 길이의 폰트 아무거나 써라*/
+		}
+		p.class {font-size: 1.0em;}
+		
+	</style>
+</head>
+<body>
+	<!-- <div id ="id">Content1</div>
+	<div class="class">Content2</div>
+	<p class="class">Content3</p> -->
+
+<!-- block contents -->
+	<div id ="id">Content1</div>
+	<div id="id2">Content2</div>
+	<p class="class">Content3</p>
+</body>
+</html>

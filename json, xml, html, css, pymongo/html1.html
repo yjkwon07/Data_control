@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- -->
+<head>
+	<meta charset="utf-8"/> <!--단일 태그를 닫을 때  인코딩 셋을 결정할 때 	빠르게 설정하기 위해서 위쪽에만 붙인다.-->
+
+	<!-- 여러 화면 해상도 크기를 자동적으로 조절 해준다. -->
+	<meta name="viewport" content="width= device-width, initial-scale=1.0"/>
+	<meta name="keywords" content="실습, 데이터진흥원, 노잼"/>
+	<!-- 	내가 설정한 키워드로 검새되어질 수 있게 설정을 한다. 그럼 키워워드로 이 웹페이지가 뜰 수 있는 확률이 높아진다.  -->
+    
+    <!--단일태그를 안닫아줄 때, 파싱시,모든 블럭이 meta로 인지, 바이트가 깨져 -->
+	
+	<!-- html5에서 타입을 설정 안해도됨-->
+	<script></script>
+	<style>
+		*{margin: 0; padding: 0; }/* 모든태그들이 0ㅇ로 수정*/
+		header { background-color: #f1f1f1f1; text-align: center; }
+		header >h1 {padding: 20px; } /*pading: 20px 20px 20px 20px 북 동 남 서 */
+		nav { overflow: hidden; background-color: #333; } /*#33333333;*/
+		nav li { float: left;  display: block; color: #f2f2f2f2; text-align: center;padding: 14px 16px; color: green; } /*#block 단위로 표현*/
+		nav li:hover {background-color: #ddd; color: black;} 
+	 	main > section { float: left; width:70%; }/* 크기의 70%*/
+	 	main > aside { float right: width:30%; }
+	 	main > section, main > aside { background-color:#aaa; ,margin-top: 20px; }
+	</style>
+	
+	<title>예제</title>
+</head>
+<body>
+<!-- 	block 요소 -->
+<!-- 	머신이와서 이해시키기 위해서 -->
+<!-- 	세션이 뭔가 중요하겠구나 article이 두개란건 뭔가 콘텐츠가 2개이겠구나. 라는걸 쉽게 해석할 수 있다. -->
+<!--  -->
+<main>
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>News</li>
+			<li>Content</li>
+			<li>About</li>
+
+		</ul>
+	</nav>
+	
+	<aside>
+		<section>
+			<h1>Advertisement</h1>
+			<p>Content</p>
+		</section>
+		<section>
+			<h1>Advertisement</h1>
+			<p>Content</p>
+		</section>
+	</aside>
+
+	<section>
+		<article>
+			<h1>Title</h1>
+			<p>Content</p>
+     	</article>
+		<article>
+			<h1>Title</h1>
+			<section>
+				<h1>Sub title2</h1>
+				<p>Sub content1</p>
+			</section>
+			<section>
+				<h1>Sub title2</h1>
+				<p>Sub content2</p>
+			</section>
+		</article>
+	</section>
+
+	<footer>
+		footer
+	</footer>
+</main>
+
+<!-- 	block 요소 -->
+
+<ul>
+	<li><span style="color:red">첫</span>번<div style="color:red">째</div></li>
+	<li>두번째</li>
+	<li>세번째</li>
+</ul>
+
+<ol>
+	<li>첫번째</li>
+	<li>두번째</li>
+	<li>세번째</li>
+</ol>
+			
+<p>	
+	<img src="1.jpg" usemap="#test" style="width: 100%" />
+	<!-- 최대화면은 가로사이즈라고 명시를 메타테그에 정의 했다  -->
+</p>
+
+<map name="test"> <!-- 네임 스페이스 정의 -->
+<area shape="rect" coords="0,0,10,10" alt="naver도움말" href="http://naver.com" >
+<area shape="rect" coords="10,10,20,20" alt="naver도움말2" href="http://naver.com" >
+<area shape="rect" coords="20,20,30,30" alt="naver도움말3" href="http://naver.com" >
+</map>	
+
+	<!--1 ~ 6 중요도 순서입니다. -->
+	<!-- 중요도에 따라 구분해주는 것 그래서 폰트크기 이런거 설정 해주지 않기를 권장-->
+
+	<h1>첫번째 예제</h1>
+	<h2>첫번째 예제</h2>
+	<h3>첫번째 예제</h3>
+	<h4>첫번째 예제</h4>
+	<h5>첫번째 예제</h5>
+	<h6>첫번째 예제</h6>
+
+	<!-- 눈으로 보이는건 차이가 없지만,  구조적인 설정이 중요하다. -->
+	<section>
+		<article>
+			<h1>제목</h1>
+	
+			<!-- white space -->
+			<p>내용</p>	
+			
+			<pre>
+			내용 
+
+
+
+			ㅇㅇㅇㅇㅇ 
+			무슨말을 하든 무시한다. 파이썬 코드 리뷰 같은거 
+			형태그대로 나오기 때문에...
+			</pre>
+	
+			<a href="http://www.naver.com" target="_blank">단락 세션 때문에 새로운 창을 안하는것도 있다.</a>
+			
+			<p>
+				단락 <br/> = "\n"나누고 싶다 
+			</p>			
+
+		</article>
+	</section>
+	
+</body>
+</html>

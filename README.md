@@ -20,7 +20,6 @@ Q(파일)<- 공부하면서 궁금했던 내용들<br/>
 - requests <br/>
 - bs4 <br/>
 - etree <br/>
-- regular expression<br/>
 <h2>Flask</h2>
 
 <h2>data 분석</h2>

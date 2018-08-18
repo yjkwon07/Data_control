@@ -13,6 +13,7 @@ Q(파일)<- 공부하면서 궁금했던 내용들<br/>
 <h2>반정형 데이터</h2>
 - xml <br/>
 - json <br/>
+- pymongo <br/>
 <h2>data scrapping + crawling</h2>
 - urlopen <br/>
 - Request <br/>
